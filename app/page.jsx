@@ -438,13 +438,7 @@ export default function EventExperiencePage() {
               Klicka runt i mobilen – eller skanna QR-koden och öppna den i din egen telefon. Så här möter besökaren
               ert företag på eventet.
             </p>
-            <div className="ee-qrInline">
-              <QrCode url={demoUrl} size={130}/>
-              <div>
-                <strong>Testa i mobilen</strong>
-                <small>Skanna med kameran</small>
-              </div>
-            </div>
+            <img src="/bilder/cubiqo.jpg" alt="Cubiqo med QR-kod" style={{ width: "100%", maxWidth: 520, borderRadius: 20, marginTop: 28, display: "block" }} />
           </div>
           <div className="ee-phone">
             <LiveDemo />
@@ -534,12 +528,10 @@ const CSS = `
 .ee-qrCard{display:flex;flex-direction:column;align-items:center;gap:8px;padding:22px;border-radius:24px;text-align:center;
   background:var(--panel);border:1px solid rgba(210,161,90,.45);box-shadow:0 0 60px rgba(210,161,90,.14)}
 .ee-qrCard strong{font-size:18px;margin-top:8px}
-.ee-qrCard small,.ee-qrInline small{color:var(--muted)}
+.ee-qrCard small{color:var(--muted)}
 .ee-qr{background:#fff;border-radius:14px;overflow:hidden;display:grid;place-items:center;max-width:100%}
 .ee-qr svg{width:100%;height:100%;display:block}
 .ee-qrLoading{color:#666;font-size:12px}
-.ee-qrInline{display:flex;align-items:center;gap:16px;margin-top:24px}
-.ee-qrInline div{display:flex;flex-direction:column}
 
 .ee-sec{padding:80px 0}
 .ee-sec.alt{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0))}
